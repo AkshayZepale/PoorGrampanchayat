@@ -21,7 +21,7 @@ export interface Scheme {
   applicationProcessEn: string;
   applicationProcessHi: string;
   imageUrl?: string
-  fileUrl: string;
+  fileUrl?: string;
   isActive: boolean;
 }
 

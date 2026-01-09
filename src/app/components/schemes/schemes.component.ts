@@ -70,14 +70,20 @@ export class SchemesComponent implements OnInit, OnDestroy {
     return getLocalizedField(scheme, 'applicationProcess', this.currentLang);
   }
 
-    openUrl(url: string): void {
-    if (!url) return;
-    const validUrl = url.startsWith('http://') || url.startsWith('https://') ? url : `https://${url}`;
-    window.open(validUrl, '_blank', 'noopener,noreferrer');
-  }
+  //   openUrl(url: string): void {
+  //   if (!url) return;
+  //   const validUrl = url.startsWith('http://') || url.startsWith('https://') ? url : `https://${url}`;
+  //   window.open(validUrl, '_blank', 'noopener,noreferrer');
+  // }
+
+openFile(url: string, event: Event) {
+  event.stopPropagation();  // Prevent routerLink navigation
+  window.open(url, '_blank');
+}
 
   private refreshLocalizedData(): void {
     this.schemes = [...this.schemes];
   }
+  
 }
 

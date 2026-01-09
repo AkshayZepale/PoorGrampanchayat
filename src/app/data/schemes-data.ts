@@ -24,7 +24,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Apply at Panchayat office with SHG resolution copy.',
     applicationProcessHi: 'एसएचजी ठराव प्रति सहित ग्राम पंचायत कार्यालय में आवेदन करें।',
     imageUrl: 'assets/i18n/Self-Help Subsidy.jpg',
-    fileUrl: 'assets/i18n/WomenSelf-HelpSubsidy.pdf',
+    fileUrl: 'assets/i18n/Akshay_Zepale_Resume.pdf',
     isActive: true
   },
   {
