@@ -20,8 +20,8 @@ export interface Scheme {
   applicationProcessMr: string;
   applicationProcessEn: string;
   applicationProcessHi: string;
-  imageUrl?: string;
-  url: string;
+  imageUrl?: string
+  fileUrl: string;
   isActive: boolean;
 }
 

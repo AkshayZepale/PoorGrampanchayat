@@ -24,7 +24,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Apply at Panchayat office with SHG resolution copy.',
     applicationProcessHi: 'एसएचजी ठराव प्रति सहित ग्राम पंचायत कार्यालय में आवेदन करें।',
     imageUrl: 'assets/i18n/Self-Help Subsidy.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/WomenSelf-HelpSubsidy.pdf',
     isActive: true
   },
   {
@@ -50,7 +50,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Submit application with landholding details.',
     applicationProcessHi: 'जोते की जानकारी सहित आवेदन जमा करें।',
     imageUrl: 'assets/i18n/Organic Farming Promotion.png',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/OrganicFarmingPromotion.pdf',
     isActive: true
   },
   {
@@ -76,7 +76,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Submit proposal through school management committee.',
     applicationProcessHi: 'विद्यालय प्रबंधन समिति के माध्यम से प्रस्ताव प्रस्तुत करें।',
     imageUrl: 'assets/i18n/Smart Classroom Initiative.webp',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/SmartClassroomInitiative.pdf',
     isActive: true
   },
   {
@@ -102,7 +102,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Submit ward resolution with estimates.',
     applicationProcessHi: 'अनुमान सहित वार्ड प्रस्ताव प्रस्तुत करें।',
     imageUrl: 'assets/i18n/Rural Road Repair Scheme.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/RuralRoadRepairScheme.pdf',
     isActive: true
   },
   {
@@ -128,7 +128,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Register at Panchayat office or apply through local MGNREGA portal.',
     applicationProcessHi: 'ग्राम पंचायत कार्यालय में पंजीकरण या स्थानीय मनरेगा पोर्टल से आवेदन करें।',
     imageUrl: 'assets/i18n/Mahatma Gandhi National Rural Employment Guarantee.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/MahatmaGandhiNationalRuralEmploymentGuarantee.pdf',
     isActive: true
   },
   {
@@ -154,7 +154,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Apply through CSC or local Panchayat facilitation center with required documents.',
     applicationProcessHi: 'आवश्यक दस्तावेजों के साथ CSC या स्थानीय पंचायत केन्द्र से आवेदन करें।',
     imageUrl: 'assets/i18n/Pradhan Mantri Awas Yojana.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/PradhanMantriAwasYojana.pdf',
     isActive: true
   },
   {
@@ -180,7 +180,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Register at Panchayat or through PM-KISAN portal with land records.',
     applicationProcessHi: 'भूमि अभिलेखों के साथ पंचायत या PM-KISAN पोर्टल पर पंजीकरण करें।',
     imageUrl: 'assets/i18n/Pradhan Mantri Kisan Samman Nidhi.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/PradhanMantriKisanSammanNidhi.pdf',
     isActive: true
   },
   {
@@ -206,7 +206,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Apply via Panchayat office or during community drives; verify eligibility locally.',
     applicationProcessHi: 'ग्राम पंचायत कार्यालय या सामुदायिक अभियानों के दौरान आवेदन करें; स्थानीय पात्रता सत्यापित करें।',
     imageUrl: 'assets/i18n/Swachh Bharat Mission.png',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/SwachhBharatMission.pdf',
     isActive: true
   },
   {
@@ -232,7 +232,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Register household requirement at Panchayat; implementation via Block/State schemes.',
     applicationProcessHi: 'पंचायत में घरेलू आवश्यकता पंजीकृत करें; कार्यान्वयन ब्लॉक/राज्य योजनाओं द्वारा।',
     imageUrl: 'assets/i18n/Jal Jeevan Mission.webp',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/JalJeevanMission.pdf',
     isActive: true
   },
   {
@@ -258,7 +258,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
     applicationProcessEn: 'Check eligibility at local health centre or through the Ayushman portal and enroll.',
     applicationProcessHi: 'स्थानीय स्वास्थ्य केंद्र पर पात्रता जांचें या पोर्टल के माध्यम से नामांकन करें।',
     imageUrl: 'assets/i18n/Ayushman Bharat - Health Coverage.jpg',
-    url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+    fileUrl: 'assets/i18n/AyushmanBharatHealthCoverage.pdf',
     isActive: true
   },
 {
@@ -284,7 +284,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Implemented through government bodies only.',
   applicationProcessHi: 'केवल सरकारी संस्थाओं के माध्यम से लागू।',
   imageUrl: 'assets/i18n/15 Finance Commission.jpg',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/15th-Finance-Commision.pdf',
   isActive: true
 },
 {
@@ -310,7 +310,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Apply at social welfare department.',
   applicationProcessHi: 'सामाजिक कल्याण विभाग में आवेदन करें।',
   imageUrl: 'assets/i18n/Scheduled Castes and Neo-Buddhist Development Scheme.jpg',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/ScheduledCastesBuddhistDevelopmentScheme.pdf',
   isActive: true
 },
 {
@@ -336,7 +336,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Apply at social justice department.',
   applicationProcessHi: 'सामाजिक न्याय विभाग में आवेदन करें।',
   imageUrl: 'assets/i18n/Ramai Awas Yojana.png',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/RamaiAwasYojana.pdf',
   isActive: true
 },
 {
@@ -362,7 +362,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Apply via Tribal Welfare Department.',
   applicationProcessHi: 'आदिवासी कल्याण विभाग के माध्यम से आवेदन करें।',
   imageUrl: 'assets/i18n/Shabri Awas Yojana.jpg',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/ShabariAdivasiGharkulYojana.pdf',
   isActive: true
 },
 {
@@ -388,7 +388,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Submit application at local authority office.',
   applicationProcessHi: 'स्थानीय प्राधिकरण कार्यालय में आवेदन जमा करें।',
   imageUrl: 'assets/i18n/Modi Awas Yojana.jpg',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/ModiAwasYojana.pdf',
   isActive: true
 },
 {
@@ -414,7 +414,7 @@ export const LOCAL_SCHEMES: Scheme[] = [
   applicationProcessEn: 'Apply at nearest bank with land documents.',
   applicationProcessHi: 'भूमि दस्तावेज़ के साथ निकटतम बैंक में आवेदन करें।',
   imageUrl: 'assets/i18n/Kisan Credit Card.png',
-  url: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80',
+  fileUrl: 'assets/i18n/KisanCreditCard.pdf',
   isActive: true
 }
 ];
