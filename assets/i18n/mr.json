@@ -1,0 +1,93 @@
+{
+  "NAVBAR": {
+    "TITLE": "पुर ग्राम पंचायत",
+    "HOME": "मुख्यपृष्ठ",
+    "SERVICES": "नागरिक सेवा",
+    "NOTICES": "सूचना फलक",
+    "SCHEMES": "योजना",
+    "GALLERY": "फोटो गॅलरी",
+    "OFFICERS": "अधिकारी",
+    "BLOGS": "ब्लॉग",
+    "FEEDBACK": "अभिप्राय"
+  },
+  "HOME": {
+    "SERVICES_TITLE": "नागरिक सेवा",
+    "NOTICES_TITLE": "सूचना फलक",
+    "SCHEMES_TITLE": "सरकारी योजना",
+    "GALLERY_TITLE": "फोटो गॅलरी",
+    "OFFICERS_TITLE": "अधिकारी",
+    "BLOGS_TITLE": "ब्लॉग",
+    "VIEW_MORE": "अधिक पहा",
+    "VIEW_ALL_NOTICES": "सर्व सूचना पहा",
+    "LEARN_MORE": "अधिक जाणून घ्या",
+    "VIEW_GALLERY": "गॅलरी पहा",
+    "VIEW_ALL_OFFICERS": "सर्व अधिकारी पहा",
+    "READ_MORE": "वाचा",
+    "VIEW_ALL_SERVICES": "सर्व सेवा पहा",
+    "VIEW_ALL_SCHEMES": "सर्व योजना पहा",
+    "VIEW_ALL_BLOGS": "सर्व ब्लॉग पहा",
+    "DOWNLOAD": "डाउनलोड करा",
+    "View PDF": "पीडीएफ पहा"
+  },
+  "SERVICES": {
+    "TITLE": "नागरिक सेवा",
+    "SUBTITLE": "आमच्या सर्व सेवा",
+    "REQUIRED_DOCUMENTS": "आवश्यक कागदपत्रे",
+    "PROCESS_TIME": "प्रक्रिया वेळ",
+    "CLICK" : "येथे क्लिक करा"
+  },
+  "NOTICES": {
+    "TITLE": "सूचना फलक",
+    "SUBTITLE": "नवीनतम सूचना",
+    "DOWNLOAD": "डाउनलोड करा",
+    "View PDF": "पीडीएफ पहा"
+  },
+  "SCHEMES": {
+    "TITLE": "सरकारी योजना",
+    "SUBTITLE": "उपलब्ध योजना",
+    "ELIGIBILITY": "पात्रता",
+    "BENEFITS": "फायदे",
+    "APPLICATION_PROCESS": "अर्ज प्रक्रिया",
+    "CLICK" : "येथे क्लिक करा"
+  },
+  "GALLERY": {
+    "TITLE": "फोटो गॅलरी",
+    "SUBTITLE": "आमच्या कार्यक्रमांची छायाचित्रे"
+  },
+  "OFFICERS": {
+    "TITLE": "अधिकारी",
+    "SUBTITLE": "आमचे अधिकारी"
+  },
+  "BLOGS": {
+    "TITLE": "ब्लॉग",
+    "SUBTITLE": "नवीनतम ब्लॉग",
+    "READ_MORE": "वाचा"
+  },
+  "FOOTER": {
+    "ABOUT": "आमच्याबद्दल",
+    "ABOUT_TEXT": "ग्राम पंचायत ही आपल्या ग्रामीण समुदायाची सेवा करते.",
+    "CONTACT": "संपर्क",
+    "QUICK_LINKS": "द्रुत दुवे",
+    "ALL_RIGHTS_RESERVED": "सर्व हक्क राखीव",
+    "social_media": "सोशल मीडियावर आम्हाला फॉलो करा",
+    "ADDRESS" : "पुर ग्रामपंचायत, देव धामापूर - कुडवली - पाटगाव रोड, देवरूख, पुर, महाराष्ट्र 415804",
+    "PHONE": "दूरध्वनी क्रमांक: ८१०४९५८६०७",
+    "TITLE0": "शासन व सार्वजनिक सेवा",
+    "TITLE01": "सार्वजनिक कल्याण व जमीन संबंधी सेवा",
+    "TITLE1": "सरकारी निर्णय",
+    "TITLE2": "महाराष्ट्र सरकार",
+    "TITLE3": "महा ऑनलाइन",
+    "TITLE4": "मतदार यादीत नाव शोधण्यासाठी",
+    "TITLE5": "कृषी विभाग महाडीबीटी",
+    "TITLE6": "७/१२ उतारा"
+  },
+  "FEEDBACK": {
+    "TITLE": "अभिप्राय फॉर्म",
+    "NAME": "नाव",
+    "EMAIL": "ईमेल",
+    "MESSAGE": "संदेश",
+    "SUBMIT": "सबमिट करा",
+    "CANCEL": "रद्द करा"
+  }
+}
+
