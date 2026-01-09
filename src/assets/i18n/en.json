@@ -1,0 +1,93 @@
+{
+  "NAVBAR": {
+    "TITLE": "Pur Gram Panchayat",
+    "HOME": "Home",
+    "SERVICES": "Citizen Services",
+    "NOTICES": "Notice Board",
+    "SCHEMES": "Schemes",
+    "GALLERY": "Photo Gallery",
+    "OFFICERS": "Officers",
+    "BLOGS": "Blogs",
+    "FEEDBACK": "Feedback"
+  },
+  "HOME": {
+    "SERVICES_TITLE": "Citizen Services",
+    "NOTICES_TITLE": "Notice Board",
+    "SCHEMES_TITLE": "Government Schemes",
+    "GALLERY_TITLE": "Photo Gallery",
+    "OFFICERS_TITLE": "Officers",
+    "BLOGS_TITLE": "Blogs",
+    "VIEW_MORE": "View More",
+    "VIEW_ALL_NOTICES": "View All Notices",
+    "LEARN_MORE": "Learn More",
+    "VIEW_GALLERY": "View Gallery",
+    "VIEW_ALL_OFFICERS": "View All Officers",
+    "READ_MORE": "Read More",
+    "VIEW_ALL_SERVICES": "View Services",
+    "VIEW_ALL_SCHEMES": "View Schemes",
+    "VIEW_ALL_BLOGS": "View Blogs",
+    "DOWNLOAD": "Download",
+    "View PDF": "View PDF"
+  },
+  "SERVICES": {
+    "TITLE": "Citizen Services",
+    "SUBTITLE": "All Our Services",
+    "REQUIRED_DOCUMENTS": "Required Documents",
+    "PROCESS_TIME": "Process Time",
+    "CLICK" : "Click Here"
+  },
+  "NOTICES": {
+    "TITLE": "Notice Board",
+    "SUBTITLE": "Latest Notices",
+    "DOWNLOAD": "Download",
+    "View PDF": "View PDF"
+  },
+  "SCHEMES": {
+    "TITLE": "Government Schemes",
+    "SUBTITLE": "Available Schemes",
+    "ELIGIBILITY": "Eligibility",
+    "BENEFITS": "Benefits",
+    "APPLICATION_PROCESS": "Application Process",
+    "CLICK" : "Click Here"
+  },
+  "GALLERY": {
+    "TITLE": "Photo Gallery",
+    "SUBTITLE": "Photos of Our Events"
+  },
+  "OFFICERS": {
+    "TITLE": "Officers",
+    "SUBTITLE": "Our Officers"
+  },
+  "BLOGS": {
+    "TITLE": "Blogs",
+    "SUBTITLE": "Latest Blogs",
+    "READ_MORE": "Read More"
+  },
+  "FOOTER": {
+    "ABOUT": "About Us",
+    "ABOUT_TEXT": "Gram Panchayat serves our rural community.",
+    "CONTACT": "Contact",
+    "QUICK_LINKS": "Quick Links",
+    "ALL_RIGHTS_RESERVED": "All Rights Reserved",
+    "social_media": "Follow us on social media",
+    "ADDRESS" : "Poor Gram Panchayat, Dev Dhamapur - Kudawali - Patgaon Road, Devrukh, Poor, Maharashtra 415804",
+    "PHONE": "Phone Number: +91 8104958607",
+    "TITLE0" : "Government & Public Services",
+    "TITLE01" : "Public Welfare & Land Services",
+    "TITLE1" : "Government decision",
+    "TITLE2" : "Government of Maharashtra",
+    "TITLE3" : "Maha Online",
+    "TITLE4" : "To search for a name in voter list",
+    "TITLE5" : "Agriculture Department MahaDBT",
+    "TITLE6" : "7/12 excerpt"
+  },
+    "FEEDBACK": {
+    "TITLE": "Feedback Form",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SUBMIT": "Submit",
+    "CANCEL": "Cancel"
+  }
+}
+

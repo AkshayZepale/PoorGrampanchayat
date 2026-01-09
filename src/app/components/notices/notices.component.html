@@ -1,0 +1,45 @@
+<div class="notices-page">
+  <div class="page-header bg-primary text-white py-5">
+    <div class="container">
+      <h1 class="display-4" translate>NOTICES.TITLE</h1>
+      <p class="lead" translate>NOTICES.SUBTITLE</p>
+    </div>
+  </div>
+  
+  <section class="notices-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.NOTICES_TITLE</h2>
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="list-group">
+          <div *ngFor="let notice of notices" class="list-group-item">
+            <!-- Click on Title to go to Notice page -->
+            <a [routerLink]="['/notices']" class="text-decoration-none">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{ getNoticeTitle(notice) }}</h5>
+                <small>{{ notice.publishDate | date:'short' }}</small>
+              </div>
+              <p class="mb-1">{{ getNoticeDescription(notice) }}</p>
+            </a>
+            <!-- View / Download buttons -->
+            <div *ngIf="notice.fileUrl">
+              <button
+                class="btn btn-sm btn-outline-secondary me-2 mt-2"
+                (click)="openFile(notice.fileUrl, $event)" translate>
+                <i class="fas fa-eye"></i> HOME.View PDF
+              </button>
+              <button
+                class="btn btn-sm btn-primary mt-2"
+                (click)="downloadFile(notice.fileUrl, $event)" translate>
+                <i class="fas fa-download"></i> HOME.DOWNLOAD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+

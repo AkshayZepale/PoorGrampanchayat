@@ -1,0 +1,270 @@
+<!-- Slider Section -->
+<section class="slider-section">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" 
+           *ngFor="let image of sliderImages; let i = index" 
+           [class.active]="i === currentSlideIndex">
+        <img [src]="image.imageUrl" class="d-block w-100" [alt]="image.title">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" (click)="prevSlide()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" (click)="nextSlide()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section py-5">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.SERVICES_TITLE</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6" *ngFor="let service of services | slice:0:3">
+        <div class="card h-100">
+          <div class="card-body">
+          <div
+            class="icon-circle"
+            [style.backgroundColor]="service.iconColor">
+            <i [class]="service.icon + ' fa-2x text-white'"></i>
+          </div>
+            <h5 class="card-title">{{ getServiceTitle(service) }}</h5>
+            <p class="card-text">{{ getServiceDescription(service) }}</p>
+              <!-- <a
+                [href]="service.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-sm btn-outline-primary mt-2"
+                (click)="$event.stopPropagation()"
+              >
+                {{ 'SERVICES.CLICK' | translate }}
+              </a> -->
+              <div class="mt-3" *ngIf="service.url">
+              <button
+                class="btn btn-sm btn-outline-primary mt-2"
+                (click)="openUrl(service.url)"
+              >
+                {{ 'SERVICES.CLICK' | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="text-center mt-4">
+          <a routerLink="/services" class="btn btn-primary" translate>
+            HOME.VIEW_ALL_SERVICES
+          </a>
+        </div>
+  </div>
+</section>
+
+<!-- Notices Section -->
+<section class="notices-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.NOTICES_TITLE</h2>
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="list-group">
+          <div *ngFor="let notice of notices | slice:0:3" class="list-group-item">
+            <!-- Click on Title to go to Notice page -->
+            <a [routerLink]="['/notices']" class="text-decoration-none">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{ getNoticeTitle(notice) }}</h5>
+                <small>{{ notice.publishDate | date:'short' }}</small>
+              </div>
+              <p class="mb-1">{{ getNoticeDescription(notice) }}</p>
+            </a>
+            <!-- View / Download buttons -->
+            <div *ngIf="notice.fileUrl">
+              <button
+                class="btn btn-sm btn-outline-secondary me-2 mt-2"
+                (click)="openFile(notice.fileUrl, $event)" translate>
+                <i class="fas fa-eye"></i> HOME.View PDF
+              </button>
+              <button
+                class="btn btn-sm btn-primary mt-2"
+                (click)="downloadFile(notice.fileUrl, $event)" translate>
+                <i class="fas fa-download"></i> HOME.DOWNLOAD
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a routerLink="/notices" class="btn btn-primary" translate>
+            HOME.VIEW_ALL_NOTICES
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schemes Section -->
+<section class="schemes-section py-5">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.SCHEMES_TITLE</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6" *ngFor="let scheme of schemes | slice:0:3">
+        <div class="card h-100">
+          <img [src]="scheme.imageUrl || 'https://via.placeholder.com/300x200'" 
+               class="card-img-top" 
+               [alt]="getSchemeTitle(scheme)">
+          <div class="card-body">
+            <h5 class="card-title">{{ getSchemeTitle(scheme) }}</h5>
+            <p class="card-text">{{ getSchemeDescription(scheme) }}</p>
+              <a
+                [href]="scheme.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-sm btn-outline-primary mt-2"
+                (click)="$event.stopPropagation()"
+              >
+                {{ 'SCHEMES.CLICK' | translate }}
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="text-center mt-4">
+          <a routerLink="/schemes" class="btn btn-primary" translate>
+            HOME.VIEW_ALL_SCHEMES
+          </a>
+        </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.GALLERY_TITLE</h2>
+
+    <!-- One Row Always -->
+    <div class="gallery-row">
+      <div class="gallery-card" *ngFor="let item of galleryItems">
+        <img 
+          [src]="item.imageUrl || 'https://via.placeholder.com/250x200'" 
+          [alt]="getLocalizedTitle(item)" 
+          loading="lazy"
+          class="gallery-img"
+        />
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a routerLink="/gallery" class="btn btn-primary" translate>HOME.VIEW_GALLERY</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Officers Section -->
+<section class="officers-section py-5">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.OFFICERS_TITLE</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-4 col-6" *ngFor="let officer of officers | slice:0:4">
+        <div class="card text-center">
+          <img [src]="officer.photoUrl || 'https://via.placeholder.com/150'" 
+               class="card-img-top rounded-circle mx-auto mt-3" 
+               style="width: 120px; height: 120px; object-fit: cover;"
+               [alt]="getOfficerName(officer)">
+          <div class="card-body">
+            <h6 class="card-title">{{ getOfficerName(officer) }}</h6>
+            <p class="card-text text-muted small">{{ getOfficerDesignation(officer) }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a routerLink="/officers" class="btn btn-primary" translate>HOME.VIEW_ALL_OFFICERS</a>
+    </div>
+  </div>
+</section>
+
+<!-- Blogs Section -->
+<section class="blogs-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title" translate>HOME.BLOGS_TITLE</h2>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let blog of blogs | slice:0:3">
+        <div class="card h-100">
+          <img [src]="blog.imageUrl || 'https://via.placeholder.com/400x250'" 
+               class="card-img-top" 
+               [alt]="getBlogTitle(blog)">
+          <div class="card-body">
+            <h5 class="card-title">{{ getBlogTitle(blog) }}</h5>
+            <p class="card-text">{{ getBlogSummary(blog) }}</p>
+            <small class="text-muted">{{ blog.publishDate | date:'medium' }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+            <div class="text-center mt-4">
+          <a routerLink="/blogs" class="btn btn-primary" translate>
+            HOME.VIEW_ALL_BLOGS
+          </a>
+        </div>
+  </div>
+</section>
+
+<!-- Modern Footer -->
+<footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Important Links 1 -->
+      <div class="col-md-4">
+        <h5 class="footer-title" translate>FOOTER.TITLE0</h5>
+        <ul class="footer-links">
+          <li><a href="https://gr.maharashtra.gov.in/1145/Government-Resolutions" translate>FOOTER.TITLE1</a></li>
+          <li><a href="https://maharashtra.gov.in/" translate>FOOTER.TITLE2</a></li>
+          <li><a href="https://www.mahaonline.gov.in/" translate>FOOTER.TITLE3</a></li>
+        </ul>
+      </div>
+
+      <!-- Important Links 2 -->
+      <div class="col-md-4">
+        <h5 class="footer-title" translate>FOOTER.TITLE01</h5>
+        <ul class="footer-links">
+          <li><a href="https://ceoelection.maharashtra.gov.in/ceo/" translate>FOOTER.TITLE4</a></li>
+          <li><a href="https://mahadbtmahait.gov.in/Farmer/Login/Login" translate>FOOTER.TITLE5</a></li>
+          <li><a href="https://bhulekh.mahabhumi.gov.in/" translate>FOOTER.TITLE6</a></li>
+        </ul>
+      </div>
+
+      <!-- Address -->
+      <div class="col-md-4">
+        <h5 class="footer-title" translate>FOOTER.CONTACT</h5>
+        <p translate>FOOTER.ADDRESS</p>
+        <p translate>FOOTER.PHONE</p>
+      </div>
+
+    </div>
+
+    <!-- Social Media Center Bottom -->
+    <div class="footer-social-bottom text-center">
+      <h5 class="footer-title mb-3" translate>FOOTER.social_media</h5>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" class="youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <hr class="my-3">
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Gram Panchayat. All Rights Reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+

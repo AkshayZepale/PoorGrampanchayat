@@ -1,0 +1,59 @@
+<div class="services-page">
+  <div class="page-header bg-primary text-white py-5">
+    <div class="container">
+      <h1 class="display-4" translate>SERVICES.TITLE</h1>
+      <p class="lead" translate>SERVICES.SUBTITLE</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <!-- Loading Spinner -->
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Services Cards -->
+    <div class="row g-4" *ngIf="!loading">
+      <div class="col-md-6 col-lg-4" *ngFor="let service of services">
+        <div class="card h-100">
+          <div class="card-body">
+          <div
+            class="icon-circle"
+            [style.backgroundColor]="service.iconColor">
+            <i [class]="service.icon + ' fa-2x text-white'"></i>
+          </div>
+          <br>
+            <h5 class="card-title">{{ getServiceTitle(service) }}</h5>
+            <p class="card-text">{{ getServiceDescription(service) }}</p>
+
+            <!-- Required Documents -->
+            <div class="mt-3">
+              <strong translate>SERVICES.REQUIRED_DOCUMENTS</strong>
+              <ul class="list-unstyled mt-2">
+                <li *ngFor="let doc of service.requiredDocuments"> {{ doc }}</li>
+              </ul>
+            </div>
+
+            <!-- Process Time -->
+            <div class="mt-3">
+              <strong translate>SERVICES.PROCESS_TIME</strong>: {{ service.processTime }}
+            </div>
+
+            <!-- URL Section -->
+            <div class="mt-3" *ngIf="service.url">
+              <button
+                class="btn btn-sm btn-outline-primary mt-2"
+                (click)="openUrl(service.url)"
+              >
+                {{ 'SERVICES.CLICK' | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

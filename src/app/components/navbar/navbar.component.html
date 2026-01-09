@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container">
+
+    <!-- LEFT SIDE (Logo + Title) -->
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" routerLink="/">
+        <img src="assets/i18n/logo.jpg" alt="Logo" class="logo-round me-2">&nbsp;
+        <span translate>NAVBAR.TITLE</span>
+      </a>
+    </div>
+
+    <!-- TOGGLER FOR MOBILE -->
+    <button class="navbar-toggler" type="button" (click)="toggleCollapse()" 
+            [attr.aria-expanded]="!isCollapsed" aria-controls="navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- RIGHT SIDE MENUS -->
+    <div class="collapse navbar-collapse" id="navbarNav" [class.show]="!isCollapsed">
+      <ul class="navbar-nav ms-auto" id="navbar-names"> <!-- 👈 THIS pushes items to RIGHT -->
+        <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()"><span translate>NAVBAR.HOME</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/officers" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.OFFICERS</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/services" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.SERVICES</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/schemes" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.SCHEMES</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/notices" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.NOTICES</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/gallery" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.GALLERY</span></a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/blogs" routerLinkActive="active" (click)="closeMenu()"><span translate>NAVBAR.BLOGS</span></a></li>
+        <!-- Feedback Button -->
+        <li class="nav-item">
+          <a routerLink="/feedback" class="btn btn-warning btn-sm ms-lg-3 mt-2 mt-lg-0">
+            <i class="fas fa-comment-dots"></i> &nbsp; 
+            <span translate (click)="closeMenu()" translate>NAVBAR.FEEDBACK</span>
+          </a>
+        </li>
+
+        <!-- Language Dropdown -->
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <div class="language-switcher">
+            <select class="form-select form-select-sm" (change)="switchLanguage($any($event.target).value)">
+              <option value="mr" [selected]="currentLang === 'mr'" (click)="closeMenu()">मराठी</option>
+              <option value="en" [selected]="currentLang === 'en'" (click)="closeMenu()">English</option>
+              <option value="hi" [selected]="currentLang === 'hi'" (click)="closeMenu()">हिंदी</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+

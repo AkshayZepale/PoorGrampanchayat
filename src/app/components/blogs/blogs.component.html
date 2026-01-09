@@ -1,0 +1,56 @@
+<div class="blogs-page">
+  <div class="page-header bg-primary text-white py-5">
+    <div class="container">
+      <h1 class="display-4" translate>BLOGS.TITLE</h1>
+      <p class="lead" translate>BLOGS.SUBTITLE</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="row g-4" *ngIf="!loading">
+      <div class="col-md-6" *ngFor="let blog of blogs">
+        <div class="card h-100">
+          <img [src]="blog.imageUrl || 'https://via.placeholder.com/600x300'" 
+               class="card-img-top" 
+               [alt]="getBlogTitle(blog)">
+          <div class="card-body">
+            <h5 class="card-title">{{ getBlogTitle(blog) }}</h5>
+            <p class="card-text">{{ getBlogSummary(blog) }}</p>
+            <small class="text-muted">{{ blog.publishDate | date:'medium' }}</small>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-sm btn-outline-primary" 
+            (click)="viewBlog(blog)" translate>BLOGS.READ_MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Detail Modal -->
+  <div class="modal fade" [class.show]="selectedBlog !== null" 
+       *ngIf="selectedBlog" 
+       (click)="closeBlog()"
+       style="display: block; background: rgba(0,0,0,0.9);">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ getBlogTitle(selectedBlog) }}</h5>
+          <button type="button" class="btn-close" (click)="closeBlog()"></button>
+        </div>
+        <div class="modal-body">
+          <img [src]="selectedBlog.imageUrl" class="img-fluid mb-3" [alt]="getBlogTitle(selectedBlog)">
+          <p class="text-muted">{{ selectedBlog.publishDate | date:'medium' }}</p>
+          <div [innerHTML]="getBlogContent(selectedBlog)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

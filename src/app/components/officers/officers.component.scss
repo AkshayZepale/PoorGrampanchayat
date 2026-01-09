@@ -1,0 +1,33 @@
+/* Remove outline only from interactive elements */
+button:focus,
+button:active,
+button:focus-visible,
+a:focus,
+a:active,
+a:focus-visible,
+input:focus,
+input:active,
+input:focus-visible,
+textarea:focus,
+textarea:active,
+textarea:focus-visible,
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+}
+
+/* Card Styling */
+.card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+}

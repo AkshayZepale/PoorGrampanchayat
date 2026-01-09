@@ -1,0 +1,38 @@
+<div class="officers-page">
+  <div class="page-header bg-primary text-white py-5">
+    <div class="container">
+      <h1 class="display-4" translate>OFFICERS.TITLE</h1>
+      <p class="lead" translate>OFFICERS.SUBTITLE</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="row g-4" *ngIf="!loading">
+      <div class="col-md-3 col-sm-4 col-6" *ngFor="let officer of officers">
+        <div class="card text-center h-100">
+          <img [src]="officer.photoUrl || 'https://via.placeholder.com/200'" 
+               class="card-img-top rounded-circle mx-auto mt-3" 
+               style="width: 150px; height: 150px; object-fit: cover;"
+               [alt]="getOfficerName(officer)">
+          <div class="card-body">
+            <h5 class="card-title">{{ getOfficerName(officer) }}</h5>
+            <p class="card-text text-primary fw-bold">{{ getOfficerDesignation(officer) }}</p>
+            <p class="card-text text-muted small" *ngIf="officer.email">
+              <i class="fas fa-envelope me-1"></i> {{ officer.email }}
+            </p>
+            <p class="card-text text-muted small" *ngIf="officer.phone">
+              <i class="fas fa-phone me-1"></i> {{ officer.phone }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

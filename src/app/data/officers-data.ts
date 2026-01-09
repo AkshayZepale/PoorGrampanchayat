@@ -1,0 +1,95 @@
+import { Officer } from '../models/officer.model';
+
+export const LOCAL_OFFICERS: Officer[] = [
+  {
+    id: 1,
+    name: 'Sunil Patkar',
+    nameMr: 'सुनील पाटकर',
+    nameEn: 'Sunil Patkar',
+    nameHi: 'सुनील पाटकर',
+    designation: 'Sarpanch',
+    designationMr: 'सरपंच',
+    designationEn: 'Sarpanch',
+    designationHi: 'सरपंच',
+    email: 'sarpanch@grampanchayat.gov.in',
+    phone: '+91 9876543210',
+    photoUrl: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  },
+  {
+    id: 2,
+    name: 'Lata Naik',
+    nameMr: 'लता नाईक',
+    nameEn: 'Lata Naik',
+    nameHi: 'लता नाइक',
+    designation: 'Deputy Sarpanch',
+    designationMr: 'उपसरपंच',
+    designationEn: 'Deputy Sarpanch',
+    designationHi: 'उप सरपंच',
+    email: 'deputy@grampanchayat.gov.in',
+    phone: '+91 9823456780',
+    photoUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  },
+  {
+    id: 3,
+    name: 'Mahesh Salunkhe',
+    nameMr: 'महेश सालुंखे',
+    nameEn: 'Mahesh Salunkhe',
+    nameHi: 'महेश सालुंखे',
+    designation: 'BDO Representative',
+    designationMr: 'गटविकास अधिकारी प्रतिनिधी',
+    designationEn: 'BDO Representative',
+    designationHi: 'गट विकास अधिकारी प्रतिनिधि',
+    email: 'bdo.rep@grampanchayat.gov.in',
+    phone: '+91 9812345678',
+    photoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  },
+  {
+    id: 4,
+    name: 'Priya Jadhav',
+    nameMr: 'प्रिया जाधव',
+    nameEn: 'Priya Jadhav',
+    nameHi: 'प्रिया जाधव',
+    designation: 'Education Committee Head',
+    designationMr: 'शिक्षण समिती प्रमुख',
+    designationEn: 'Education Committee Head',
+    designationHi: 'शिक्षा समिति प्रमुख',
+    email: 'education@grampanchayat.gov.in',
+    phone: '+91 9898989898',
+    photoUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  },
+  {
+    id: 5,
+    name: 'Rahul Kamble',
+    nameMr: 'राहुल कांबळे',
+    nameEn: 'Rahul Kamble',
+    nameHi: 'राहुल कांबले',
+    designation: 'Health Officer',
+    designationMr: 'आरोग्य अधिकारी',
+    designationEn: 'Health Officer',
+    designationHi: 'स्वास्थ्य अधिकारी',
+    email: 'health@grampanchayat.gov.in',
+    phone: '+91 9977553311',
+    photoUrl: 'https://images.unsplash.com/photo-1528892952291-009c663ce843?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  },
+  {
+    id: 6,
+    name: 'Sneha Patil',
+    nameMr: 'स्नेहा पाटील',
+    nameEn: 'Sneha Patil',
+    nameHi: 'स्नेहा पाटिल',
+    designation: 'Agriculture Officer',
+    designationMr: 'कृषी अधिकारी',
+    designationEn: 'Agriculture Officer',
+    designationHi: 'कृषि अधिकारी',
+    email: 'agri@grampanchayat.gov.in',
+    phone: '+91 9123456700',
+    photoUrl: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80',
+    isActive: true
+  }
+];
+

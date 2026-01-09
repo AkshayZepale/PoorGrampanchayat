@@ -1,0 +1,95 @@
+import { GalleryItem } from '../models/gallery-item.model';
+
+export const LOCAL_GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 1,
+    title: 'Ganpatipule Beach Clean-up',
+    titleMr: 'गणपतीपुळे समुद्रकिनारा स्वच्छता मोहीम',
+    titleEn: 'Ganpatipule Beach Clean-up',
+    titleHi: 'गणपतिपुले समुद्र तट सफाई अभियान',
+    description: 'Volunteers joined hands to keep Ganpatipule beach pristine.',
+    descriptionMr: 'स्वयंसेवकांनी गणपतीपुळे समुद्रकिनारा स्वच्छ ठेवण्यासाठी मोठ्या संख्येने सहभाग घेतला.',
+    descriptionEn: 'Volunteers joined hands to keep Ganpatipule beach pristine.',
+    descriptionHi: 'स्वयंसेवकों ने गणपतिपुले समुद्र तट को स्वच्छ बनाए रखने के लिए साथ दिया।',
+    imageUrl: 'assets/i18n/ganpatipule.jpg',
+    category: 'Community',
+    uploadDate: new Date('2025-05-05'),
+    isActive: true
+  },
+  {
+    id: 2,
+    title: 'Harbour Modernization',
+    titleMr: 'बंदर आधुनिकीकरण',
+    titleEn: 'Harbour Modernization',
+    titleHi: 'बंदर आधुनिकीकरण',
+    description: 'Upgraded docking facilities to support local fishermen.',
+    descriptionMr: 'स्थानिक मच्छीमारांच्या गरजांसाठी बंदरातील सुविधा सुधारित करण्यात आल्या.',
+    descriptionEn: 'Upgraded docking facilities to support local fishermen.',
+    descriptionHi: 'स्थानीय मछुआरों की सहायता के लिए बंदर की सुविधाओं को उन्नत किया गया।',
+    imageUrl: 'assets/i18n/ships.jpg',
+    category: 'Infrastructure',
+    uploadDate: new Date('2025-06-12'),
+    isActive: true
+  },
+  {
+    id: 3,
+    title: 'Konkan Railway Expansion',
+    titleMr: 'कोकण रेल्वे विस्तार',
+    titleEn: 'Konkan Railway Expansion',
+    titleHi: 'कोंकण रेलवे विस्तार',
+    description: 'New foot-over bridge inaugurated for safer travel.',
+    descriptionMr: 'प्रवाशांच्या सुरक्षिततेसाठी नवीन फूट-ओव्हर ब्रिजचे उद्घाटन.',
+    descriptionEn: 'New foot-over bridge inaugurated for safer travel.',
+    descriptionHi: 'यात्रियों की सुरक्षा के लिए नया फुट-ओवर ब्रिज उद्घाटित।',
+    imageUrl: 'assets/i18n/rail.jpg',
+    category: 'Transport',
+    uploadDate: new Date('2025-07-01'),
+    isActive: true
+  },
+  {
+    id: 4,
+    title: 'Tikleshwar Temple Festival',
+    titleMr: 'टिकलेश्वर मंदिर उत्सव',
+    titleEn: 'Tikleshwar Temple Festival',
+    titleHi: 'टिकलेश्वर मंदिर उत्सव',
+    description: 'Devotees celebrated the annual yatra with great fervor.',
+    descriptionMr: 'भक्तांनी वार्षिक यात्रेचा उत्साहात आनंद घेतला.',
+    descriptionEn: 'Devotees celebrated the annual yatra with great fervor.',
+    descriptionHi: 'श्रद्धालुओं ने वार्षिक यात्रा बड़े उत्साह से मनाई।',
+    imageUrl: 'assets/i18n/Tikleshwar_temple-devrukh.jpg',
+    category: 'Culture',
+    uploadDate: new Date('2025-08-18'),
+    isActive: true
+  },
+  {
+    id: 5,
+    title: 'Community Health Camp',
+    titleMr: 'सामुदायिक आरोग्य शिबिर',
+    titleEn: 'Community Health Camp',
+    titleHi: 'सामुदायिक स्वास्थ्य शिविर',
+    description: 'Free health check-ups held at the Gram Panchayat hall.',
+    descriptionMr: 'ग्रामपंचायत सभागृहात मोफत आरोग्य तपासणी शिबिर.',
+    descriptionEn: 'Free health check-ups held at the Gram Panchayat hall.',
+    descriptionHi: 'ग्राम पंचायत सभागार में निशुल्क स्वास्थ्य जांच शिविर आयोजित।',
+    imageUrl: 'assets/i18n/Community Health Camp.jpg',
+    category: 'Health',
+    uploadDate: new Date('2025-09-10'),
+    isActive: true
+  },
+  {
+    id: 6,
+    title: 'Women Self-Help Group Meet',
+    titleMr: 'महिला बचत गट बैठक',
+    titleEn: 'Women Self-Help Group Meet',
+    titleHi: 'महिला स्वयं सहायता समूह बैठक',
+    description: 'Showcasing local handicrafts and micro-enterprises.',
+    descriptionMr: 'स्थानिक हस्तकलेचा व सूक्ष्म उद्योगांचा परिचय.',
+    descriptionEn: 'Showcasing local handicrafts and micro-enterprises.',
+    descriptionHi: 'स्थानीय हस्तशिल्प और सूक्ष्म उद्यमों का प्रदर्शन।',
+    imageUrl: 'assets/i18n/Women Self-Help Group Meet.png',
+    category: 'Community',
+    uploadDate: new Date('2025-10-02'),
+    isActive: true
+  }
+];
+

@@ -1,0 +1,25 @@
+<div class="feedback-form p-3" (click)="closeMenu()">
+  <h3 translate>FEEDBACK.TITLE</h3> <!-- Feedback Form -->
+
+  <form (ngSubmit)="submitFeedback()">
+    
+    <div class="mb-3">
+      <label translate>FEEDBACK.NAME</label>
+      <input type="text" class="form-control" [(ngModel)]="feedback.name" name="name" required>
+    </div>
+
+    <div class="mb-3">
+      <label translate>FEEDBACK.EMAIL</label>
+      <input type="email" class="form-control" [(ngModel)]="feedback.email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label translate>FEEDBACK.MESSAGE</label>
+      <textarea class="form-control" [(ngModel)]="feedback.message" name="message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" translate>FEEDBACK.SUBMIT</button>
+    <button type="submit" class="btn btn-outline-secondary ms-2" (click)="oncancel()" translate>FEEDBACK.CANCEL</button>
+  </form>
+</div>
+

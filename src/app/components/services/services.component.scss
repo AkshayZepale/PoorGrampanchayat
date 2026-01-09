@@ -1,0 +1,289 @@
+button:focus,
+button:active,
+button:focus-visible,
+a:focus,
+a:active,
+a:focus-visible,
+input:focus,
+input:active,
+input:focus-visible,
+textarea:focus,
+textarea:active,
+textarea:focus-visible,
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// /* Page Header */
+// .page-header {
+//   background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+// }
+
+// /* Card Styling */
+// .card {
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+// }
+// .icon-circle {
+//   width: 70px;
+//   height: 70px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// /* ================================
+//    Services Page Base
+// ================================ */
+// .services-page {
+//   background-color: #f8f9fa;
+// }
+
+// /* ================================
+//    Page Header
+// ================================ */
+// .page-header {
+//   background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+//   position: relative;
+// }
+
+// .page-header h1 {
+//   font-weight: 600;
+// }
+
+// .page-header p {
+//   opacity: 0.9;
+// }
+
+// /* ================================
+//    Card Styling
+// ================================ */
+// .card {
+//   border: none;
+//   border-radius: 16px;
+//   background: #ffffff;
+//   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+//   transition: transform 0.35s ease, box-shadow 0.35s ease;
+// }
+
+// .card:hover {
+//   transform: translateY(-8px);
+//   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+// }
+
+// .card-body {
+//   padding: 1.75rem;
+// }
+
+// /* ================================
+//    Icon Circle
+// ================================ */
+// .icon-circle {
+//   width: 72px;
+//   height: 72px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 10px;
+//   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+// }
+
+// /* ================================
+//    Text Styling
+// ================================ */
+// .card-title {
+//   font-weight: 600;
+//   margin-top: 10px;
+// }
+
+// .card-text {
+//   color: #6c757d;
+//   font-size: 0.95rem;
+// }
+
+// /* ================================
+//    List Styling
+// ================================ */
+// .list-unstyled li {
+//   padding-left: 16px;
+//   position: relative;
+//   font-size: 0.9rem;
+//   color: #495057;
+// }
+
+// .list-unstyled li::before {
+//   content: "•";
+//   position: absolute;
+//   left: 0;
+//   color: #a43931;
+//   font-size: 1.2rem;
+// }
+
+// /* ================================
+//    Button Styling
+// ================================ */
+// .btn-outline-primary {
+//   border-radius: 25px;
+//   padding: 6px 18px;
+//   font-weight: 500;
+//   transition: all 0.3s ease;
+//   background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+//   color: #f8f9fa;
+// }
+
+// /* ================================
+//    Spinner
+// ================================ */
+// .spinner-border {
+//   width: 3rem;
+//   height: 3rem;
+// }
+
+// /* ================================
+//    Responsive Tweaks
+// ================================ */
+// @media (max-width: 768px) {
+//   .page-header h1 {
+//     font-size: 2rem;
+//   }
+
+//   .card {
+//     border-radius: 12px;
+//   }
+// }
+
+
+/* ================================
+   Services Page Base
+================================ */
+.services-page {
+  background-color: #f8f9fa;
+}
+
+/* ================================
+   Page Header
+================================ */
+.page-header {
+  background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+  position: relative;
+}
+
+.page-header h1 {
+  font-weight: 600;
+}
+
+.page-header p {
+  opacity: 0.9;
+}
+
+/* ================================
+   Card Styling
+================================ */
+.card {
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+/* ================================
+   Icon Circle
+================================ */
+.icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   Text Styling
+================================ */
+.card-title {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   List Styling (Updated)
+================================ */
+.list-unstyled {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-unstyled li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.list-unstyled li::before {
+  content: "•";
+  color: #a43931;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* ================================
+   Button Styling
+================================ */
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 6px 18px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+/* ================================
+   Spinner
+================================ */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ================================
+   Responsive Tweaks
+================================ */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+}

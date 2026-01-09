@@ -1,0 +1,142 @@
+/* Navbar Styling */
+.navbar-brand:focus,
+.navbar-brand:active,
+.navbar-brand:focus-visible,
+.logo-round:focus,
+.logo-round:active,
+.logo-round:focus-visible,
+.nav-link:focus,
+.nav-link:active,
+.nav-link:focus-visible,
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Correct container */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+// /* 🔹 Remove click border from buttons */
+.btn:focus,
+.btn:active,
+.btn:focus-visible {
+outline: none !important;
+box-shadow: none !important;
+}
+
+.navbar {
+  background:linear-gradient(135deg, #1d4350 0%, #a43931 100%);
+  padding: 0.7rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+.logo-round {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+/* Navbar Brand (Logo + Title) */
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Links */
+.nav-link {
+  margin: 0 6px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover & Active Effect */
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Make Navbar Items Right Side */
+.navbar-nav {
+  align-items: center;
+}
+
+/* Feedback Button */
+.btn-warning {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 5px 14px;
+  transition: transform 0.3s ease;
+}
+.btn-warning:hover {
+  transform: scale(1.05);
+}
+
+/* Language Dropdown */
+.language-switcher select {
+  min-width: 120px;
+  border-radius: 8px;
+  padding: 5px 8px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(7, 233, 184, 0.1);
+  color: white;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+.language-switcher select option {
+  background-color: white;   /* dropdown background */
+  color: black;               /* text color */
+  padding: 10px;              /* spacing */
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.language-switcher select:hover {
+  border-color: white;
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .btn-warning,
+  .language-switcher {
+    margin: 10px 0;
+  }
+}
