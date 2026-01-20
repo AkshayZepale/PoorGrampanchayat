@@ -363,3 +363,71 @@ textarea:focus-visible,
   border-color: transparent;
   color: #ffffff;
 }
+
+.btn.btn-primary {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.btn.btn-outline-secondary {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: #6c757d;   /* secondary color */
+  color: #ffffff;
+  transform: translateY(-2px); /* lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-color: #6c757d;
+}
+
+/* Optional: icon animation */
+.btn.btn-outline-secondary i {
+  transition: transform 0.3s ease;
+}
+
+.btn.btn-outline-secondary:hover i {
+  transform: scale(1.1);
+}
+
+// a.btn-outline-primary {
+//   border: 1px solid #0d6efd;
+//   color: #0d6efd;
+//   background-color: transparent;
+//   font-weight: 500;
+//   padding: 6px 14px;
+//   border-radius: 6px;
+//   text-decoration: none;
+//   transition: all 0.3s ease;
+// }
+
+// /* Hover effect */
+// a.btn-outline-primary:hover {
+//   background-color: #0d6efd;
+//   color: #ffffff;
+//   box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+//   transform: translateY(-1px);
+// }
+
+// /* Active / Click */
+// a.btn-outline-primary:active {
+//   transform: scale(0.97);
+//   box-shadow: none;
+// }
+
+// /* Focus (keyboard accessibility) */
+// a.btn-outline-primary:focus {
+//   outline: none;
+//   box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+// }
+
+// /* Disabled look (optional) */
+// a.btn-outline-primary.disabled,
+// a.btn-outline-primary[aria-disabled="true"] {
+//   pointer-events: none;
+//   opacity: 0.6;
+// }
